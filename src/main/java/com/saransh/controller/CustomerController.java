@@ -51,9 +51,11 @@ public class CustomerController {
         if (sortBy != null) {
             int sort = Integer.parseInt(sortBy);
             List<Customer> customers = customerService.getCustomers(sort);
+            model.addAttribute("search", null);
             model.addAttribute("customers", customers);
         } else {
             List<Customer> customers = customerService.getCustomers(SortUtils.SortByLastName.getValue()); // get customers list from CustomerService class
+            model.addAttribute("search", null);
             model.addAttribute("customers", customers); // add customers list in the model
         }
         return "customer-list";
@@ -74,6 +76,7 @@ public class CustomerController {
     @GetMapping("/search")
     public String searchCustomer(@RequestParam(required = false) String search, Model model) {
         if (search != null) {
+            model.addAttribute("search", search);
             model.addAttribute("customers", customerService.searchCustomer(search));
             return "customer-list";
         }

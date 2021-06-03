@@ -28,7 +28,7 @@
         <c:choose>
             <c:when test="${customers.size() > 0}">
                 <form class="form-container d-flex mb-5" action="/customer/search" method="GET">
-                    <input type="text" class="form-control" name="search" placeholder="Search" required>
+                    <input type="text" class="form-control" name="search" placeholder="Search" value="${search}" required>
                     <input type="submit" class="btn btn-primary ms-5" value="Search">
                 </form>
                 <table class="table table-striped">
