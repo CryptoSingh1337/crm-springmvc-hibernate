@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+
+        <!-- Console Appender -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MMM-dd HH:mm:ss a} [%t] %-5level %logger{36} - %msg%n" />
+        </Console>
+
+        <!-- File Appender -->
+        <File name="File" fileName="logs/log4j2-logging.log">
+            <PatternLayout pattern="%d{yyyy-MMM-dd HH:mm:ss a} [%t] %-5level %logger{36} - %msg%n" />
+        </File>
+
+    </Appenders>
+    <Loggers>
+        <!-- Log everything in hibernate -->
+        <Logger name="org.hibernate" level="info" additivity="false">
+            <AppenderRef ref="Console" />
+        </Logger>
+
+        <!-- Log SQL statements -->
+        <Logger name="org.hibernate.SQL" level="debug" additivity="false">
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="File" />
+        </Logger>
+
+        <!-- Log JDBC bind parameters -->
+        <Logger name="org.hibernate.type.descriptor.sql" level="trace" additivity="false">
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="File" />
+        </Logger>
+
+        <!-- Log custom packages -->
+        <Logger name="com.letsgeeks.udemy" level="debug" additivity="false">
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="File" />
+        </Logger>
+
+        <Root level="error">
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="File" />
+        </Root>
+    </Loggers>
+</Configuration>

@@ -1,0 +1,58 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #D3CCE3;
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+}
+
+#addForm {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#favicon {
+    height: 200px;
+    width: 200px;
+}
+
+.index-heading {
+    font-size: 50px;
+}
+
+h1:not(.index-heading) {
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.form-container {
+    justify-self: center;
+    align-self: center;
+    margin: 3em auto 0;
+    width: 50% !important;
+}
+
+
+
+.error {
+    color: red;
+    padding: 5px 10px 5px 0;
+}
