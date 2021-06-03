@@ -20,6 +20,7 @@
 
 #### Add Customer and Bean Validation with custom message
 <img src="screenshots/bean-validation.png" alt="bean-validation" align="center">
+
 #### Update Customer
 <img src="screenshots/update.png" alt="update" align="center">
 
