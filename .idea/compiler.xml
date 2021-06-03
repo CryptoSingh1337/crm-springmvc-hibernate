@@ -7,8 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="CRM-SpringMVC-And-Hibernate" />
-        <module name="CRM - Spring-MVC-Hibernate" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="CRM-SpringMVC-And-Hibernate" target="16" />
+    </bytecodeTargetLevel>
   </component>
 </project>
