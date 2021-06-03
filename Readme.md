@@ -12,10 +12,22 @@
 
 ## Screenshots
 
-<img src="screenshots/home.png" alt="home" align="center"><br>
-<img src="screenshots/customer-list.png" alt="customer-list" align="center"><br>
-<img src="screenshots/bean-validation.png" alt="bean-validation" align="center"><br>
-<img src="screenshots/update.png" alt="update" align="center"><br>
-<img src="screenshots/search.png" alt="search" align="center"><br>
-<img src="screenshots/sort.png" alt="sort" align="center"><br>
+#### Home/index page
+<img src="screenshots/home.png" alt="home" align="center">
+
+#### Customer List
+<img src="screenshots/customer-list.png" alt="customer-list" align="center">
+
+#### Add Customer and Bean Validation with custom message
+<img src="screenshots/bean-validation.png" alt="bean-validation" align="center">
+#### Update Customer
+<img src="screenshots/update.png" alt="update" align="center">
+
+#### Search Functionality
+<img src="screenshots/search.png" alt="search" align="center">
+
+#### Sort Functionality
+<img src="screenshots/sort.png" alt="sort" align="center">
+
+#### Delete Customer
 <img src="screenshots/delete.png" alt="delete" align="center">
