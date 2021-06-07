@@ -50,6 +50,7 @@
           <element id="library" level="project" name="Maven: com.mchange:mchange-commons-java:0.2.19" />
           <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-core:2.14.1" />
           <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-api:2.14.1" />
+          <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.9.6" />
           <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:4.0.1" />
           <element id="library" level="project" name="Maven: javax.servlet.jsp:javax.servlet.jsp-api:2.3.3" />
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />

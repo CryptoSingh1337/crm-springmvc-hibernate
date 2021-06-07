@@ -4,6 +4,7 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:mvc="http://www.springframework.org/schema/mvc"
        xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
     	http://www.springframework.org/schema/beans/spring-beans.xsd
     	http://www.springframework.org/schema/context
@@ -11,9 +12,11 @@
     	http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc.xsd
         http://www.springframework.org/schema/tx
-		http://www.springframework.org/schema/tx/spring-tx.xsd">
+		http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <context:component-scan base-package="com.saransh.controller, com.saransh.dao, com.saransh.service"/>
+    <context:component-scan base-package="com.saransh.controller, com.saransh.dao, com.saransh.service, com.saransh.aspects"/>
     <mvc:annotation-driven/>
     <mvc:resources mapping="/assets/**" location="/assets/"/>
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -52,4 +55,7 @@
 
 <!--    Enable transactional annotations-->
     <tx:annotation-driven transaction-manager="transactionManager" />
+
+<!--    Add AspectJ autoproxy support for AOP-->
+    <aop:aspectj-autoproxy />
 </beans>
