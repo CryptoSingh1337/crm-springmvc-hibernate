@@ -7,7 +7,8 @@
 - Search based on first name, last name and email.
 - Sort the data based on first name, last name and email.
 - Used Service facade and DAO design principles.
-- Add bean validation on Customer properties.
+- Added bean validation on Customer properties.
+- Added Spring AOP for logging (@Before and @AfterReturning advice).
 ---
 
 ## Screenshots
