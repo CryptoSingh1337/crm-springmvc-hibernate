@@ -38,7 +38,7 @@
                 <form:input type="email" cssClass="form-control" name="email" path="email"/>
                 <form:errors cssClass="error ps-5" path="email"/>
             </div>
-            <input type="submit" class="btn btn-primary" value="Submit">
+            <input type="submit" class="btn btn-primary" value="Save">
             <a class="ms-5" href="/customer/list">Back to list</a>
         </form:form>
     </div>
